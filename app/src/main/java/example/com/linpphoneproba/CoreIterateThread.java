@@ -40,7 +40,7 @@ public class CoreIterateThread extends Thread {
             //continuous blocking read until thread is terminated:
             while (!terminated) {
                myCore.iterate();
-               Thread.sleep(100);
+               Thread.sleep(20);
                Log.i("MY_THREAD","Thread data: "+Thread.currentThread());
             }
         }
